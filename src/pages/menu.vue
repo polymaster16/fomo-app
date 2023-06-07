@@ -15,7 +15,7 @@
         <span 
         class="menu-text1">Home</span>
       </div>
-      <div @click="router.push('/store')" 
+      <div @click="studio" 
       class="menu-container3">
         <svg viewBox="0 0 1024 1024" class="menu-icon2">
           <path
@@ -48,6 +48,9 @@
 import AppHeader from '../components/header.vue'
 import { useRouter } from 'vue-router';
 const router = useRouter()
+const studio =()=>{
+  window.location.href='https://men-storex.sanity.studio/desk';
+}
 </script>
 
 <style scoped>
